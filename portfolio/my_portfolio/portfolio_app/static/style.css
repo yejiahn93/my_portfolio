@@ -1,0 +1,373 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+    width: 100% !important;
+}
+
+.row {
+    padding-top: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-Bold";
+}
+
+.typewriter h1 {
+    padding-bottom: 10px;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
+
+p {
+    color: black;
+}
+
+/* Headings */
+#profile_1 {
+    padding-top: 70px;
+    padding-left: 40px;
+}
+
+.big-heading {
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+    background-color: #6d8299;
+    height: 740px;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+    background-color: #6d8299;
+    color: #fff;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+    width: 60%;
+    position: absolute;
+    right: -10%;
+    display: flex;
+}
+
+
+/* scroll*/
+
+.scroll-wrap {
+    position: absolute;
+    right: 0.5%;
+    top: 42%;
+    cursor: pointer;
+}
+
+.scroll {
+    display: block;
+    text-transform: uppercase;
+    color: #1f1e3e;
+    font-size: 14px;
+    letter-spacing: 7px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+p {
+    font-size: 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+}
+
+.scroll-down span {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 2px;
+    height: 80px;
+    background: #1f1e3e;
+    content: ' ';
+    margin-top: 66px;
+    animation: scroll-down 2s infinite;
+
+
+}
+
+@keyframes scroll-down {
+    0% {
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+
+.skills-content {
+    padding-left: 200px !important;
+    height: 740px;
+    padding-top: 200px;
+    padding-right: 160px
+}
+
+.skills-each {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 30px;
+    background-color: #6d8299;
+    color: #fff;
+
+}
+
+.skills-each:hover {
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.logos {
+    position: relative;
+    padding: 20px;
+}
+
+
+.skills-title {
+    border-bottom: 1px solid #ccc;
+}
+.skills-tech {
+    padding-top: 40px;
+    display: flex;
+}
+
+#skills-column {
+    width: 315px;
+    padding-left: 30px;
+}
+
+#projects-content1,
+#projects-content2,
+#projects-content3 {
+    padding-top: 40px;
+    padding-left: 120px !important;
+    background-color: #6d8299;
+    color: black;
+    height: 740px;
+}
+.projects {
+    position: absolute;
+    left: 7%;
+    text-orientation: mixed;
+    transform: rotate(270deg);
+    color: #DCDCDC;
+    padding-top: 100px;
+}
+
+.project1,.project2,.project3 {
+    display: block;
+    position: relative;
+    padding: 300px 300px 150px;
+}
+
+#project_page > a {
+    border: 1px solid black;
+    color: black;
+    font-size: 0.6rem;
+    padding: 5pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#project_page>a:hover {
+    background: #f09d06;
+}
+
+
+/**scroll nav**/
+#scroll_nav {
+    position: fixed;
+    top: 30vh;
+}
+#scroll_nav li {
+    list-style: none;
+    padding: 2pt 3pt 0 0;
+    transition: 0.3s;
+}
+#scroll_nav li a {
+    text-decoration: none;
+    color: #494846;
+    margin-left: 5pt;
+    padding: 10pt;
+}
+#scroll_nav li img {
+    width: 5pt;
+}
+#scroll {
+    text-align: center;
+    margin-top: 100pt;
+}
+#list1:hover {
+    background-color: #fa471d !important;
+}
+#list2:hover {
+    background-color: #fcb81b !important;
+}
+#list3:hover {
+    background: #79962b !important;
+}
+#list4:hover {
+    background: #f09d06 !important;
+}
+/**#list5:hover {background:#2c5f7c !important;}**/
+#scroll_nav li a {
+    color: #494846;
+}
+#scroll_nav li a:hover {
+    color: white !important;
+}
+
+/**contact**/
+
+.contact {
+    padding: 250px 0 160px 120px !important;
+    height: 740px;
+}
+
+
+.social-icon {
+    margin: 20px 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.container-fluid {
+    padding-top: 20px;
+}
