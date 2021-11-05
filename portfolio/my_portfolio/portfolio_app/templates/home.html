@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load bootstrap4 %}
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <section id="scroll_nav">
+        <nav>
+            <ul>
+                <li id="list1">
+                    <a href="#title" style="color: rgb(73, 72, 70);" :>Profile</a>
+                </li>
+                <li id="list2" style="background-color: transparent;">
+                    <a href="#skills_page" style="color: rgb(73, 72, 70);">Skills</a>
+                </li>
+                <li id="list3" style="background-color: transparent;">
+                    <a href="#projects-content1" style="color: rgb(73, 72, 70);">Project1</a>
+                </li>
+                <li id="list4" style="background-color: transparent;">
+                    <a href="#projects-content2" style="color: rgb(73, 72, 70);">Project2</a>
+                </li>
+                <li id="list1">
+                    <a href="#projects-content3" style="color: rgb(73, 72, 70);" :>Project3</a>
+                </li>
+                <li id="list4" style="background-color: transparent;">
+                    <a href="#contact" style="color: rgb(73, 72, 70);">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="colored-section" id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-top">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#title">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills_page">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects-content1">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div id="profile_1">
+                    <div class="typewriter">
+                        <h1>I'm Yeji Ahn</h1>
+                    </div>
+                    <h2>Software Engineer</h2>
+                    <h2>Based in Los Angeles</h2>
+                </div>
+                <div class="col-lg-6" id="profile-image ">
+                    <img class="title-image" src="{% static 'yeji_2.png' %}" alt="">
+                </div>
+                <div class="scroll-wrap">
+                    <div class="scroll">
+                        <p>scroll down</p>
+                    </div>
+                    <div class="scroll-down">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-content" id="skills_page">
+        <div>
+            <h1> SKILLS </h1>
+        </div>
+        <div class="row">
+            <div class="skills-all">
+                <div class="skills-tech">
+                    <div class="col-lg-8" id="skills-column">
+                        <div class="skills-each">
+                            <div class="skills-title">
+                                <h3>Front-end</h3>
+                            </div>
+                            <div class="front-tech">
+                                <img class="logos" src="{% static 'html.png' %}" alt="">
+                                <img class="logos" src="{% static 'css.png' %}" alt="">
+                                <img class="logos" src="{% static 'javascript.png' %}" alt="">
+                                <img class="logos" src="{% static 'react.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" id="skills-column-2">
+                        <div class="skills-each">
+                            <div class="skills-title">
+                                <h3>Back-end</h3>
+                            </div>
+                            <div class="back-tech">
+                                <img class="logos" src="{% static 'python.png' %}" alt="">
+                                <img class="logos" src="{% static 'django.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects-content1">
+        <div id="project1-top">
+            <div class="project1" id="project_page">
+                <div class="projects">
+                    <h1>PROJECT 1</h1>
+                </div>
+                <div id="foody-buddy">
+                    <h2>Foody Buddy</h2>
+                </div>
+                <h5>The Foody Buddy is a website which is developed in python. The Foody Buddy helps to find other people who can and/or want to eat together. Through the website, people can follow/unfollow </h5>
+                <a href="https://github.com/yejiahn93/foody_buddy">GITHUB</a>
+            </div>
+        </div>
+    </section>
+    <section id="projects-content2">
+        <div id="project2-top">
+            <div class="project2" id="project_page">
+                <div class="projects">
+                    <h1>PROJECT 2</h1>
+                </div>
+                <div id="my-portfolio">
+                    <h2>WeBuySell</h2>
+                </div>
+                <h5>Web application that allows users to buy and/or sell personal items in an online marketplace.</h5>
+                <a href="https://github.com/webuysell/weBuySell_2">GITHUB</a>
+            </div>
+    `</div>
+    </section>
+    <section id="projects-content3">
+        <div id="project3-top">
+            <div class="project3" id="project_page">
+                <div class="projects">
+                    <h1>PROJECT 3</h1>
+                </div>
+                <div id="my-portfolio">
+                    <h2>My Portfolio</h2>
+                </div>
+                <h5>A personal website that shows my current skills and projects achieved.</h5>
+                <a href="https://github.com/yejiahn93/my_portfolio">GITHUB</a>
+            </div>
+    `</div>
+    </section>
+    <section class="contact">
+        <div><h1> CONTACT ME</h1></div>
+        <div class="container-fluid" id="contact">
+            <a href = "mailto: yejiahn93@gmail.com"><img class="social-icon" src="{% staticgit 'email.gif' %}" alt=""></a>
+            <a href="https://github.com/yejiahn93?tab=repositories"><img class="social-icon" src="{% static 'github.gif' %}"></a>
+            <a href="https://www.linkedin.com/in/yeji-ahn-42973b101/"><img class="social-icongi" src="{% static 'linkedin.gif' %}" ></a>
+        </div>
+    </section>
+</body>
+</html>
